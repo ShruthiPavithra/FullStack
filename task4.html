@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=tab, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family:"lato";
+            src: url(./fonts/Lato-Black.ttf);
+        }
+        table{
+            border-collapse: collapse;
+            font-family: lato;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .gray{
+            background-color: #f1f1f1;
+        }
+        /* th,td{
+
+        } */
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <table border="2">
+            <thead>
+                <tr>
+                    <th class="gray" colspan="3">Invoice #123456789</th>
+                    <th class="gray">14 January 2025</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Pay to: <br> Acme Billing Co. <br> 123 Main St. <br> Cityville,NA 12345</tb>
+                    <!-- <td colspan="3">Pay to: <br> Acme Billing Co. <br> 123 Main St. <br> Cityville,NA 12345</tb> -->
+    
+                    <td colspan="3">Customer: <br> John Smith <br> 321 Willow Way <br> Southeast Northwestershire,MA 54321</tb>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th class="gray">Name/Description</th>
+                    <th class="gray">Qty.</th>
+                    <th class="gray">@</th>
+                    <th  class="gray">Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paperclips</td>
+                    <td>1000</td>
+                    <td>0.01</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <td>Staples</td>
+                    <td>100</td>
+                    <td>1.00</td>
+                    <td>100.0</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="gray">Subtotal</td><br>
+                    <td>110.0</td>
+                </tr>    
+                <tr>
+                    <td colspan="2" class="gray">Tax</td>
+                        <td>8%</td>
+                        <td>8.80</td><br>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="gray">GrandTotal</td>
+                        <td>$118.80</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

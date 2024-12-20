@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        height: 10vh;
+        width: 20%;
+        color: aquamarine;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+  
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+</style>
+<script>
+    function color(){
+    let back=document.getElementById("back");
+    let change=document.getElementById("change")
+    if(back){
+        change.style.backgroundColor="yellow"
+    }
+}
+function border(){
+    let bo=document.getElementById("bo");
+    // let add=document.getElementById("add");
+    let change=document.getElementById("change")
+
+    if(change.style.border){
+        change.style.border= "none";
+        bo.innerText="addborder";
+        // bo.innerText="Remove Border";
+        // add.style.borderWidth='10%'
+    }
+    else{
+        change.style.border="2px solid black";
+        bo.innerText="remove border";
+    }
+}
+
+function range(){
+    const slider=document.getElementById("slider");
+    const change=document.getElementById("change");
+    change.style.fontSize=`${slider.value}px`;
+   
+}
+
+</script>
+</head>
+<body>
+    <div id="change">
+        <p>Hello World</p>
+    </div>
+    <div class="container">
+    <button onclick="color()" id="back">changebgcolor</button>
+    <button onclick="border()" id="bo">addborder</button>
+
+    <div>
+    <input type="range" id="slider" min="0" max="50"  oninput="range()" value="16">
+     </div>
+    
+    </div>
+</body>
+</html>

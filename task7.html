@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: #3B3F4D;
+            padding: 10px;
+            display:grid;
+            grid-gap:20px 20px;
+            width: 60%;
+            /* display: flex; */
+            /* align-content: center; */
+           /* align-items: center; */
+            grid-template-areas:"header header header"
+                                 "sidebar Content-1 Content-1 "
+                                "sidebar Content-2 Content-3"
+                                "footer footer footer";
+
+        }
+        .grid-item{
+            border: 1px solid #3B3F4D;
+            padding: 20px;
+            display: flex;
+            /* align-content: center; */
+            /* text-align: center;
+             */
+             justify-content: center;
+            align-items: center;
+            color: white;
+            border: 4px solid black;
+        }
+        .child1{
+            grid-area: header;
+            background-color: #7F69DE;
+        }
+        .child2{
+            grid-area: sidebar;
+            background-color: aquamarine;
+        }
+        .child3{
+            grid-area:Content-1;
+            background-color: #3D87EE;
+            height: 20vh;
+        }
+        .child4{
+            grid-area: Content-2;
+            background-color: #3D87EE;
+            height: 10vh;
+        }
+        .child5{
+            grid-area: Content-3;
+            background-color: #3D87EE;
+            height: 10vh;
+        }
+        .child6{
+            grid-area: footer;
+            background-color: #7F69DE;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item child1" >header</div>
+        <div class="grid-item child2">sidebar</div>
+        <div class="grid-item child3">content-1</div>
+        <div class="grid-item child4">content-2</div>
+        <div class="grid-item child5" >content-3</div>
+        <div class="grid-item child6">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table, */
+        th,
+        td{
+            border: 2px solid black;
+            /* border-color: blueviolet; */
+            border-collapse: separate;
+            border-spacing:10px;
+            /* outline: 2px solid crimson; */
+
+        }
+        table{
+            border: 6px solid brown;
+            border-collapse: separate;
+            border-spacing:10px;
+        }
+        .black{
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        .red{
+            color: crimson;
+            font-weight: bold; 
+            text-align: center;      
+        }
+        .blue{
+            color: blue;
+            font-weight: bold;
+            text-align: center;
+        }
+        .brown{
+            color: brown;
+            font-weight: bold;
+            text-align: center;
+        }
+        .green{
+            color: darkgreen;
+            font-weight: bold;
+            text-align: center;
+        }
+        .yellow{
+            color: darkgoldenrod;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        .purple{
+            color: blueviolet;
+            text-align:center;
+            font: bold;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        /* #separateTable{
+            border-collapse: collapse;
+            border-spacing:10px;
+        } */
+    </style>
+</head>
+<body>
+    <h1 class="purple"><u>COLLEGE TIMETABLE</u></h1>
+    <div class="parent">
+        <table id="separateTable">
+            <!-- <h1 class="purple"><u>COLLEGE TIMETABLE</u></h1> -->
+            <thead>
+                <tr>
+                    <th>DAY</th>
+                    <th>8.30-9.30</th>
+                    <th>9.30-10.30</th>
+                    <th>10.30-11.30</th>
+                    <th>11.30-12.30</th>
+                    <th>12.30-2.00</th>
+                    <th>2.00-3.00</th>
+                    <th>3.00-4.00</th>
+                    <th>4.00-5.00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="black">MONDAY</td>
+                    <td class="black">SEMINAR</td>
+                    <td class="red">ENG</td>
+                    <td class="brown">TAM</td>
+                    <td class="red">PHY</td>
+                    <td rowspan="6" style="writing-mode: vertical-lr; text-orientation: upright; text-align: center;">LUNCH</td>
+                    <td class="blue">CHE</td>
+                    <td class="brown">MATH</td>
+                    <td class="green">C.CLASS</td>
+                </tr>
+                <tr>
+                    <td class="black">TUESDAY</td>
+                    <td class="black">C.CLASS</td>
+                    <td class="blue">ENG</td>
+                    <td class="red">CHE</td>
+                    <td class="red">PHY</td>
+                    <!-- <td style=></td> -->
+                    <td class="black">LAB</td>
+                    <td class="blue">ENG</td>
+                    <td class="green">TAM</td>
+                </tr>
+                <tr>
+                    <td class="black">WEDNESDAY</td>
+                    <td class="black">LAB</td>
+                    <td class="yellow">ENG</td>
+                    <td class="blue">TAM</td>
+                    <td class="red">ENG</td>
+                    <!-- <td style=></td> -->
+                    <td class="black">LAB</td>
+                    <td class="blue">ENG</td>
+                    <td class="green">TAM</td>
+                </tr>
+                <tr>
+                    <td class="black">THURSADY</td>
+                    <td class="black">DESIGN</td>
+                    <td class="green">ENG</td>
+                    <td class="red">TAM</td>
+                    <td class="red">PHY</td>
+                    <!-- <td style=></td> -->
+                    <td class="black">DESIGN</td>
+                    <td class="blue">ENG</td>
+                    <td class="blue">LAB</td>
+                </tr>
+                <tr>
+                    <td class="black">FRIDAY</td>
+                    <td class="black">ECONOMICS</td>
+                    <td class="red">ENG</td>
+                    <td class="brown">TAM</td>
+                    <td class="red">DESIGN</td>
+                    <!-- <td></td> -->
+                    <td class="black">ECONOMICS</td>
+                    <td class="blue">ENG</td>
+                    <td class="red">TAM</td>
+                </tr>
+                <tr>
+                    <td class="black">SATURDAY</td>
+                    <td class="black">HISTORY</td>
+                    <td class="brown">C.C</td>
+                    <td class="green">DESIGN</td>
+                    <td class="red">LAB</td>
+                    <!-- <td></td> -->
+                    <td class="black">C.C</td>
+                    <td class="blue">ENG</td>
+                    <td class="red">TAM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
